@@ -10,6 +10,8 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import Messages from '../messages/messages.js';
 import Camera from '../camera/camera.js';
 import FeedPhoto from '../../components/feedPhoto.js';
+import Stories from '../../components/stories.js';
+
 
 export default class Feed extends Component {
 
@@ -36,6 +38,12 @@ export default class Feed extends Component {
     		</View>
     		<View style={styles.feeds}>
     			<ScrollView style={{flex:1}}>
+    				<Text style={{fontSize: 16, marginLeft: 10, marginBottom: 10}}>Stories</Text>
+    				
+    				<ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+    					<Stories />
+    				</ScrollView>
+    				
     				<FeedPhoto />
     				<FeedPhoto />
     				<FeedPhoto />
@@ -81,6 +89,6 @@ const styles = StyleSheet.create({
 	},
 	feeds: {
 		flex:2,
-		marginTop: 50,
+		marginTop: 65,
 	}
 })

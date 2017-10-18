@@ -68,7 +68,7 @@ export const FTabs = TabNavigator({
     },
     tabStyle: {
       padding: 10,
-      backgroundColor: '#fff',
+      backgroundColor: '#eeeeee',
     }
   },
 });

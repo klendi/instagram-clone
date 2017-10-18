@@ -11,7 +11,8 @@ export default class FeedPhoto extends Component {
 		return(
 			<View style={styles.container}>
 				<View style={styles.owner}>
-					<View style={styles.ownerThumb} />
+					
+					<Image style={styles.ownerThumb} source={require('../../images/profile.jpg')} />
 					<TouchableOpacity>
 						<Text style={styles.ownerText}>klendigocci</Text>
 					</TouchableOpacity>
@@ -19,9 +20,7 @@ export default class FeedPhoto extends Component {
 						<Text style={styles.menuIcon}>...</Text>
 					</TouchableOpacity>
 				</View>
-
-				<View style={styles.image}>
-				</View>
+				<Image style={styles.image} source={require('../../images/2.jpg')} />
 
 				<View style={styles.likeAndCommentsSect}>
 					<TouchableOpacity>
@@ -42,7 +41,7 @@ export default class FeedPhoto extends Component {
 				</View>
 				<View>
 					<TouchableOpacity>
-						<Text style={styles.likesNum}>150 likes</Text>
+						<Text style={styles.likesNum}>1500 likes</Text>
 					</TouchableOpacity>
 					<View style={styles.commentSect}>
 						<View style={styles.commentContent}>
@@ -66,17 +65,12 @@ export default class FeedPhoto extends Component {
 const styles = StyleSheet.create({
 	container: {
 		flex:1,
-		marginTop: 50,
+		marginBottom: 30
 	},
 	image: {
 		height: 300,
 		width: '100%',
-		backgroundColor: 'teal',
 		alignSelf: 'center',
-		borderBottomColor: '#000',
-		borderBottomWidth: .5,
-		borderTopColor: '#000',
-		borderTopWidth: .5,
 	},
 	owner: {
 		flexDirection: 'row',
@@ -91,11 +85,10 @@ const styles = StyleSheet.create({
 		paddingRight: 220,
 	},
 	ownerThumb: {
-		height: 35,
-		width: 35,
-		borderRadius: 30,
+		height: 33,
+		width: 33,
+		borderRadius: 35,
 		marginLeft: 10,
-		backgroundColor: 'black',
 	},
 	menuIcon: {
 		fontSize: 30,
