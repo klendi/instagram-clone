@@ -1,26 +1,22 @@
 [
 	{
 		"id":"1",
-		"photo": "../images/1.png",
+		"thumb": "require(../../images/profile.jpg)",
 	},
 	{
 		"id":"2",
-		"photo": "../images/1.png",
-	},
-	{
-		"id":"2",
-		"photo": "../images/1.png",
+		"thumb": "require(../../images/profile.jpg)",
 	},
 	{
 		"id":"3",
-		"photo": "../images/1.png",
+		"thumb": "require(../../images/profile.jpg)",
 	},
 	{
 		"id":"4",
-		"photo": "../images/1.png",
+		"thumb": "require(../../images/m7.jpg)",
 	},
 	{
 		"id":"5",
-		"photo": "../images/1.png",
+		"thumb": "require(../../images/m9.jpg)",
 	},
 ]

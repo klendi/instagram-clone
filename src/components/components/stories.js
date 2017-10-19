@@ -14,9 +14,18 @@ export default class Stories extends Component {
     			<ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
 					<View style={styles.container}>
 						<Image source={require('../../images/4.png')} style={styles.storie} />
+						<Image source={require('../../images/m2.jpg')} style={styles.storie} />
+						<Image source={require('../../images/m3.jpg')} style={styles.storie} />
+						<Image source={require('../../images/m5.jpg')} style={styles.storie} />
+						<Image source={require('../../images/p4.jpg')} style={styles.storie} />
+						<Image source={require('../../images/m4.jpg')} style={styles.storie} />
+						<Image source={require('../../images/m2.jpg')} style={styles.storie} />
+						<Image source={require('../../images/m4.jpg')} style={styles.storie} />
+						<Image source={require('../../images/p9.jpg')} style={styles.storie} />
 						<FlatList
+						horizontal={true}
 						data={require('../../data/stories.json')}
-						renderItem={({story}) => <Image style={styles.storie} source={{uri: story.photo}} />}/>
+						renderItem={({item}) => <Image style={styles.storie} source={item.thumb} />}/>
 					</View>
 				</ScrollView>
 			</View>

@@ -20,7 +20,7 @@ export default class FeedPhoto extends Component {
 						<Text style={styles.menuIcon}>...</Text>
 					</TouchableOpacity>
 				</View>
-				<Image style={styles.image} source={require('../../images/2.jpg')} />
+				<Image style={styles.image} source={require('../../images/3.jpg')} />
 
 				<View style={styles.likeAndCommentsSect}>
 					<TouchableOpacity>
@@ -41,14 +41,14 @@ export default class FeedPhoto extends Component {
 				</View>
 				<View>
 					<TouchableOpacity>
-						<Text style={styles.likesNum}>1500 likes</Text>
+						<Text style={styles.likesNum}>150M likes</Text>
 					</TouchableOpacity>
 					<View style={styles.commentSect}>
 						<View style={styles.commentContent}>
 							<TouchableOpacity>
 								<Text style={styles.comentUser}>klendigocci</Text>
 							</TouchableOpacity>
-							<Text style={{marginLeft: 5, marginTop: 1.5}}>Hello from this awesome comments</Text>
+							<Text style={{marginLeft: 5, marginTop: 1.5}}>Hello World</Text>
 						</View>
 						<TouchableOpacity>
 							<Text style={styles.viewAllComments}>View all 20 comments</Text>

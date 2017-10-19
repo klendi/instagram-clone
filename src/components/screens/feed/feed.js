@@ -36,14 +36,10 @@ export default class Feed extends Component {
 	    			<Icon name="ios-paper-plane-outline" size={35} color="#000" />
 		    	</TouchableOpacity>
     		</View>
+    		
     		<View style={styles.feeds}>
     			<ScrollView style={{flex:1}}>
-    				<Text style={{fontSize: 16, marginLeft: 10, marginBottom: 10}}>Stories</Text>
-    				
-    				<ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-    					<Stories />
-    				</ScrollView>
-    				
+    				<Stories/>
     				<FeedPhoto />
     				<FeedPhoto />
     				<FeedPhoto />

@@ -1,8 +1,13 @@
 [
 	{
 		"id": "1",
+		"username": "gocci",
+		"name": "Klendi Gocci",
+		"photos": ["../images/1.png","../images/2.jpg)"],
 	},
 	{
-		"id": "2"
+		"id": "2",
+		"username": "klendi",
+		"name": "Gocci Klendi",
 	},
 ]
