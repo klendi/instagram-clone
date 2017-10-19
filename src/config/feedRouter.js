@@ -53,22 +53,23 @@ export const FTabs = TabNavigator({
   tabBarPosition: 'bottom',
   swipeEnabled: false,
   lazyLoad: true,
-  showIcons:true,
   animationEnabled: false,
   tabBarOptions: {
     activeTintColor: '#000',
     inactiveTintColor: '#616161',
     style: {
-      backgroundColor: '#eeeeee',
       padding: 3,
+      backgroundColor: '#fafafa',
+      width: '100%',
+      borderTopWidth: .5,
+      borderTopColor: '#000',
     },
     indicatorStyle: {
-      backgroundColor: '#616161',
+      backgroundColor: '#fafafa',
       height: 0,
     },
     tabStyle: {
-      padding: 10,
-      backgroundColor: '#eeeeee',
+      backgroundColor: '#fafafa',
     }
   },
 });

@@ -19,10 +19,15 @@ export const Tabs = TabNavigator({
   },
   FeedTabs: {
     screen: FeedTabs,
-     navigationOptions: {
+    navigationOptions: {
       tabBarVisible: false,
       title: 'INSTAGRAM',
      },
+      navigationOptions: ({ navigation }) => ({
+      title: 'INSTAGRAM',
+      tabBarVisible: false
+    }),
+
   },
   Messages: {
     screen: Messages,

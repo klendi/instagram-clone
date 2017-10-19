@@ -13,19 +13,10 @@ export default class Stories extends Component {
     			<Text style={{fontSize: 16, marginLeft: 10, marginBottom: 10}}>Stories</Text>
     			<ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
 					<View style={styles.container}>
-						<Image source={require('../../images/4.png')} style={styles.storie} />
-						<Image source={require('../../images/m2.jpg')} style={styles.storie} />
-						<Image source={require('../../images/m3.jpg')} style={styles.storie} />
-						<Image source={require('../../images/m5.jpg')} style={styles.storie} />
-						<Image source={require('../../images/p4.jpg')} style={styles.storie} />
-						<Image source={require('../../images/m4.jpg')} style={styles.storie} />
-						<Image source={require('../../images/m2.jpg')} style={styles.storie} />
-						<Image source={require('../../images/m4.jpg')} style={styles.storie} />
-						<Image source={require('../../images/p9.jpg')} style={styles.storie} />
-						<FlatList
-						horizontal={true}
-						data={require('../../data/stories.json')}
-						renderItem={({item}) => <Image style={styles.storie} source={item.thumb} />}/>
+						<View>
+							<Image source={require('../../images/p3.jpg')} style={styles.storie} />
+							<Text style={styles.username}>gocci</Text>
+						</View>
 					</View>
 				</ScrollView>
 			</View>
@@ -44,5 +35,8 @@ const styles = StyleSheet.create({
 		marginLeft: 7,
 		borderWidth: 3,
 		borderColor: 'red',
+	},
+	username: {
+		alignSelf: 'center',
 	},
 });
