@@ -14,8 +14,8 @@ export default class Camera extends Component {
     	<View style={styles.container}>
     		<View style={styles.header}>
     			<Text style={styles.headerText}>Camera</Text>
-    				<TouchableOpacity style={styles.back}>
-							<Icon style={{alignSelf: 'center'}} name="ios-arrow-round-back" size={55} color="#000"/> 
+    				<TouchableOpacity onPress={() => this.props.navigation.navigate("Feed")} style={styles.back}>
+							<Icon style={{alignSelf: 'center', transform: [{ rotate: '180deg'}],}} name="ios-arrow-round-back" size={55} color="#000"/> 
 		    		</TouchableOpacity>
     		</View>
     	</View>

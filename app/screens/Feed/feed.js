@@ -30,7 +30,7 @@ export default class Feed extends Component {
     	<View style={styles.container}>
     		<View style={styles.header}>
     				<View style={styles.cameraSectionBtn}>
-	    			<TouchableOpacity>
+	    			<TouchableOpacity onPress={() => this.props.navigation.navigate("Camera")}>
 		    			<Icon name="ios-camera-outline" size={40} color="#000"/>
 			    	</TouchableOpacity>
 			    	</View>

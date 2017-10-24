@@ -101,7 +101,7 @@ export const Tabs = TabNavigator({
   },
 }, 
 {
-  initialRouteName: 'Camera',
+  initialRouteName: 'FeedTabs',
   tabBarOptions: {
     activeTintColor: '#000',
     inactiveTintColor: '#000',
