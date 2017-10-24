@@ -1,15 +1,25 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Navigator } from 'react-native';
-import { Root } from './src/config/router.js';
+import {
+  Platform,
+  StyleSheet,
+  Text,
+  View
+} from 'react-native';
 
-class App extends Component {
+import { Tabs } from './app/config/router.js';
+
+export default class App extends Component {
   render() {
-    return(
-    	<View style={{flex:1, marginTop:24}}>
-    		<Root />
+    return (
+    	<View style={styles.container}>
+    		<Tabs />
     	</View>
     );
   }
 }
 
-export default App;
+const styles = StyleSheet.create({
+	container: {
+    flex:1,
+	},
+});
