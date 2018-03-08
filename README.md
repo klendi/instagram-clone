@@ -20,8 +20,8 @@ Launch the app on iOS simulator using
 
     react-native run-ios
 
-## ScreenShots
-### NOTICE: The images low quality it's because of API picture quality thanks
+## Screenshots
+#### NOTICE: The images are low quality because that's how the random images API have them
 ![Screenshot1](https://github.com/klendi/instagram-clone/blob/master/screenshots/s1.png)
 
 ## Features
